@@ -1,7 +1,7 @@
 
 
 ./bin/myapp: ./obj/func1.o ./obj/func2.o ./obj/main.o
-	clang -o $@ #^
+	clang -o $@ $^
 
 
 ./obj/%.o: ./src/%.c
